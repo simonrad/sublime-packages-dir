@@ -20,7 +20,7 @@
 /C++/
 /CSS/
 /Clojure/
-/Color Scheme - Default/
+/Color Scheme - Default/*
 /D/
 /Default/
 /Diff/
@@ -59,3 +59,8 @@
 /Vintage/
 /XML/
 /YAML/
+
+
+# Un-ignore specific files
+!/Color Scheme - Default/Monokai Bright.tmTheme
+
