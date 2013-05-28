@@ -5,6 +5,7 @@
     { "keys": ["super+ctrl+alt+d", "super+ctrl+alt+g"], "command": "git_diff" },
     { "keys": ["super+ctrl+alt+g", "super+ctrl+alt+d"], "command": "git_diff" },
     { "keys": ["super+ctrl+alt+i"], "command": "increment_selection" },
+    { "keys": ["super+ctrl+alt+t"], "command": "delete_trailing_spaces" },
     { "keys": ["super+ctrl+alt+p", "super+ctrl+alt+j"], "command": "prettyjson" },
     { "keys": ["ctrl+h"], "command": "open_search_result" },
     { "keys": ["ctrl+shift+super+j"], "command": "move_view", "args": {"direction": "left"} },
@@ -126,10 +127,6 @@
 
     // Other random stuff
     { "keys": ["super+\\"],      "command": "reindent" },
-    { "keys": ["super+ctrl+\\"], "command": "reindent" },
+    { "keys": ["super+ctrl+\\"], "command": "reindent" }
 
-
-    // I have not published this plugin anywhere
-    // TODO: I should replace it with the Trailing Spaces plugin
-    { "keys": ["ctrl+super+shift+t"], "command": "select_trailing_whitespace" }
 ]
