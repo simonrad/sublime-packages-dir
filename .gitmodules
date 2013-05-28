@@ -1,0 +1,3 @@
+[submodule "EasyMotion"]
+	path = EasyMotion
+	url = git@github.com:simonrad/sublime-packages-dir.git
