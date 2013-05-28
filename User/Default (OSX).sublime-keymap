@@ -1,2 +1,135 @@
 [
+    // Plugins
+    { "keys": ["super+ctrl+alt+d", "super+ctrl+alt+s"], "command": "file_diff_selections" },
+    { "keys": ["super+ctrl+alt+d", "super+ctrl+alt+t"], "command": "file_diff_tab" },
+    { "keys": ["super+ctrl+alt+d", "super+ctrl+alt+g"], "command": "git_diff" },
+    { "keys": ["super+ctrl+alt+g", "super+ctrl+alt+d"], "command": "git_diff" },
+    { "keys": ["super+ctrl+alt+i"], "command": "increment_selection" },
+    { "keys": ["super+ctrl+alt+p", "super+ctrl+alt+j"], "command": "prettyjson" },
+    { "keys": ["ctrl+h"], "command": "open_search_result" },
+    { "keys": ["ctrl+shift+super+j"], "command": "move_view", "args": {"direction": "left"} },
+    { "keys": ["ctrl+shift+super+l"], "command": "move_view", "args": {"direction": "right"} },
+
+
+    // Begin home-row movement keys
+    // -----------------------------------
+    { "keys": ["super+j"],       "command": "move", "args": {"by": "characters", "forward": false} },
+    { "keys": ["super+l"],       "command": "move", "args": {"by": "characters", "forward": true} },
+    { "keys": ["super+shift+j"], "command": "move", "args": {"by": "characters", "forward": false, "extend": true} },
+    { "keys": ["super+shift+l"], "command": "move", "args": {"by": "characters", "forward": true,  "extend": true} },
+
+    { "keys": ["alt+j"],       "command": "move", "args": {"by": "words",     "forward": false} },
+    { "keys": ["alt+l"],       "command": "move", "args": {"by": "word_ends", "forward": true} },
+    { "keys": ["alt+shift+j"], "command": "move", "args": {"by": "words",     "forward": false, "extend": true} },
+    { "keys": ["alt+shift+l"], "command": "move", "args": {"by": "word_ends", "forward": true,  "extend": true} },
+
+    { "keys": ["ctrl+alt+j"],       "command": "move", "args": {"by": "subwords",     "forward": false} },
+    { "keys": ["ctrl+alt+l"],       "command": "move", "args": {"by": "subword_ends", "forward": true} },
+    { "keys": ["ctrl+alt+shift+j"], "command": "move", "args": {"by": "subwords",     "forward": false, "extend": true} },
+    { "keys": ["ctrl+alt+shift+l"], "command": "move", "args": {"by": "subword_ends", "forward": true,  "extend": true} },
+
+    { "keys": ["ctrl+alt+backspace"], "command": "delete_word", "args": { "forward": false, "sub_words": true } },
+    { "keys": ["ctrl+alt+delete"],    "command": "delete_word", "args": { "forward": true,  "sub_words": true } },
+
+    { "keys": ["super+i"],       "command": "move", "args": {"by": "lines", "forward": false} },
+    { "keys": ["super+k"],       "command": "move", "args": {"by": "lines", "forward": true} },
+    { "keys": ["super+shift+i"], "command": "move", "args": {"by": "lines", "forward": false, "extend": true} },
+    { "keys": ["super+shift+k"], "command": "move", "args": {"by": "lines", "forward": true,  "extend": true} },
+
+    { "keys": ["alt+i"],       "command": "move_to", "args": { "to": "bol" } },
+    { "keys": ["alt+k"],       "command": "move_to", "args": { "to": "eol" } },
+    { "keys": ["alt+shift+i"], "command": "move_to", "args": { "to": "bol", "extend": true } },
+    { "keys": ["alt+shift+k"], "command": "move_to", "args": { "to": "eol", "extend": true } },
+
+    { "keys": ["ctrl+shift+i"], "command": "select_lines", "args": {"forward": false} },
+    { "keys": ["ctrl+shift+k"], "command": "select_lines", "args": {"forward": true} },
+
+    { "keys": ["ctrl+super+i"], "command": "scroll_lines", "args": {"amount": 30.0} },
+    { "keys": ["ctrl+super+k"], "command": "scroll_lines", "args": {"amount": -30.0} },
+    { "keys": ["ctrl+super+j"], "command": "prev_view" },
+    { "keys": ["ctrl+super+l"], "command": "next_view" },
+
+    { "keys": ["ctrl+alt+i"], "command": "scroll_lines", "args": {"amount": 5.0} },
+    { "keys": ["ctrl+alt+k"], "command": "scroll_lines", "args": {"amount": -5.0} },
+    // -----------------------------------
+    // End home-row movement keys
+
+
+    // Some helpful stuff that goes along with the home-row movement keys
+    { "keys": ["ctrl+super+q"], "command": "next_view_in_stack" },
+    { "keys": ["ctrl+super+w"], "command": "prev_view_in_stack" },
+    { "keys": ["ctrl+super+n"], "command": "unindent" },
+    { "keys": ["ctrl+super+m"], "command": "indent" },
+    { "keys": ["ctrl+f"],       "command": "show_panel", "args": {"panel": "incremental_find", "reverse": false} },
+    { "keys": ["ctrl+shift+f"], "command": "show_panel", "args": {"panel": "incremental_find", "reverse": true} },
+    { "keys": ["ctrl+s"],       "command": "show_panel", "args": {"panel": "incremental_find", "reverse": true} },
+    { "keys": ["ctrl+super+f"], "command": "show_panel", "args": {"panel": "find_in_files"} },
+    { "keys": ["ctrl+super+h"], "command": "switch_file", "args": {"extensions": ["cpp", "cxx", "cc", "c", "hpp", "hxx", "h", "ipp", "inl", "m", "mm"]} },
+
+
+    // Fast control of bookmarks
+    { "keys": ["ctrl+b", "ctrl+b"], "command": "toggle_bookmark" },
+    { "keys": ["ctrl+b", "ctrl+c"], "command": "clear_bookmarks" },
+    { "keys": ["ctrl+b", "ctrl+s"], "command": "select_all_bookmarks" },
+
+
+    // Replacements for cmd+j/l
+    // (There's also cmd+i which was incremental_find - that's replaced above)
+    { "keys": ["ctrl+j"],       "command": "join_lines" },
+    { "keys": ["ctrl+l"],       "command": "expand_selection", "args": {"to": "line"} },
+    { "keys": ["ctrl+shift+l"], "command": "split_selection_into_lines" },
+
+
+    // Replacements for cmd+k sequences
+    { "keys": ["ctrl+k", "ctrl+b"],         "command": "toggle_side_bar" },
+    { "keys": ["ctrl+k", "ctrl+d"],         "command": "find_under_expand_skip" },
+    { "keys": ["ctrl+k", "ctrl+u"],         "command": "upper_case" },
+    { "keys": ["ctrl+k", "ctrl+l"],         "command": "lower_case" },
+    { "keys": ["ctrl+k", "ctrl+space"],     "command": "set_mark" },
+    { "keys": ["ctrl+k", "ctrl+a"],         "command": "select_to_mark" },
+    { "keys": ["ctrl+k", "ctrl+w"],         "command": "delete_to_mark" },
+    { "keys": ["ctrl+k", "ctrl+x"],         "command": "swap_with_mark" },
+    { "keys": ["ctrl+k", "ctrl+g"],         "command": "clear_bookmarks", "args": {"name": "mark"} },
+    { "keys": ["ctrl+k", "ctrl+1"],         "command": "fold_by_level", "args": {"level": 1} },
+    { "keys": ["ctrl+k", "ctrl+2"],         "command": "fold_by_level", "args": {"level": 2} },
+    { "keys": ["ctrl+k", "ctrl+3"],         "command": "fold_by_level", "args": {"level": 3} },
+    { "keys": ["ctrl+k", "ctrl+4"],         "command": "fold_by_level", "args": {"level": 4} },
+    { "keys": ["ctrl+k", "ctrl+5"],         "command": "fold_by_level", "args": {"level": 5} },
+    { "keys": ["ctrl+k", "ctrl+6"],         "command": "fold_by_level", "args": {"level": 6} },
+    { "keys": ["ctrl+k", "ctrl+7"],         "command": "fold_by_level", "args": {"level": 7} },
+    { "keys": ["ctrl+k", "ctrl+8"],         "command": "fold_by_level", "args": {"level": 8} },
+    { "keys": ["ctrl+k", "ctrl+9"],         "command": "fold_by_level", "args": {"level": 9} },
+    { "keys": ["ctrl+k", "ctrl+0"],         "command": "unfold_all" },
+    { "keys": ["ctrl+k", "ctrl+j"],         "command": "unfold_all" },
+    { "keys": ["ctrl+k", "ctrl+t"],         "command": "fold_tag_attributes" },
+    { "keys": ["ctrl+k", "ctrl+y"],         "command": "yank" },
+    { "keys": ["ctrl+k", "ctrl+k"],         "command": "run_macro_file", "args": {"file": "Packages/Default/Delete to Hard EOL.sublime-macro"} },
+    { "keys": ["ctrl+k", "ctrl+backspace"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete to Hard BOL.sublime-macro"} },
+    { "keys": ["ctrl+k", "ctrl+c"],         "command": "show_at_center" },
+
+
+    // Faster way to escape
+    { "keys": ["ctrl+;"], "command": "single_selection",                     "context": [{ "key": "num_selections",        "operator": "not_equal", "operand": 1 }] },
+    { "keys": ["ctrl+;"], "command": "clear_fields",                         "context": [{ "key": "has_next_field",        "operator": "equal", "operand": true }] },
+    { "keys": ["ctrl+;"], "command": "clear_fields",                         "context": [{ "key": "has_prev_field",        "operator": "equal", "operand": true }] },
+    { "keys": ["ctrl+;"], "command": "hide_panel", "args": {"cancel": true}, "context": [{ "key": "panel_visible",         "operator": "equal", "operand": true }] },
+    { "keys": ["ctrl+;"], "command": "hide_overlay",                         "context": [{ "key": "overlay_visible",       "operator": "equal", "operand": true }] },
+    { "keys": ["ctrl+;"], "command": "hide_auto_complete",                   "context": [{ "key": "auto_complete_visible", "operator": "equal", "operand": true }] },
+
+
+    // My own SelectionTools plugin
+    { "keys": ["super+shift+\\"],     "command": "align_indentation" },
+    { "keys": ["ctrl+super+shift+g"], "command": "multi_quick_find_all" },
+    { "keys": ["super+o"],            "command": "reverse_selection_direction" },
+    { "keys": ["super+shift+o"],      "command": "shorten_selection" },
+
+
+    // Other random stuff
+    { "keys": ["super+\\"],      "command": "reindent" },
+    { "keys": ["super+ctrl+\\"], "command": "reindent" },
+
+
+    // I have not published this plugin anywhere
+    // TODO: I should replace it with the Trailing Spaces plugin
+    { "keys": ["ctrl+super+shift+t"], "command": "select_trailing_whitespace" }
 ]
