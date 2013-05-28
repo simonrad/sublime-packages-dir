@@ -14,6 +14,7 @@ CURRENT_JUMP_GROUP = None
 SELECT_TEXT = False
 COMMAND_MODE_WAS = False
 JUMP_TARGET_SCOPE = 'string'
+CHARACTER = None
 
 
 class JumpGroupGenerator:
@@ -30,6 +31,8 @@ class JumpGroupGenerator:
         self.jump_target_index = 0
         self.jump_target_groups = self.create_jump_target_groups()
         self.jump_target_group_index = -1
+        global CHARACTER
+        CHARACTER = character
 
     def determine_re_flags(self, character):
         if character == 'enter':
@@ -129,7 +132,7 @@ class JumpGroupGenerator:
         if (REGEX_ESCAPE_CHARS.find(character) >= 0):
             return re_flags + '\\' + character
         elif character == "enter":
-            return re_flags + "(?=^).|.(?=$)"
+            return re_flags + "(?=^)."
         else:
             return re_flags + character
 
@@ -287,6 +290,9 @@ class DeactivateJumpTargets(sublime_plugin.WindowCommand):
 class JumpToWinningSelection(sublime_plugin.TextCommand):
     def run(self, edit, begin, end):
         winning_region = sublime.Region(int(begin), int(end))
+        winning_str = self.view.substr(winning_region)
+        if CHARACTER == 'enter' and len(winning_str) > 2 and winning_str[-2] == '\n':
+            winning_region = sublime.Region(int(begin), int(end) - 1)
         sel = self.view.sel()
         sel.clear()
         sel.add(winning_region)
