@@ -64,3 +64,27 @@
 # Un-ignore specific files
 !/Color Scheme - Default/Monokai Bright.tmTheme
 
+
+# Ignore community packages
+/Alignment/
+/All Autocomplete/
+/CTags/
+/Case Conversion/
+/FileDiffs/
+/Git/
+/GitGutter/
+/Increment Selection/
+/Move Tabs/
+/OpenSearchResult/
+/Package Control/
+/Pretty JSON/
+/SFTP/
+/TrailingSpaces/
+
+
+# Ignore files associated with community packages
+/User/Package Control.last-run
+/User/Package Control.sublime-settings
+/User/sftp_servers/
+
+
