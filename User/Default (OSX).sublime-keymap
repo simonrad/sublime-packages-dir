@@ -6,7 +6,7 @@
     { "keys": ["super+ctrl+alt+g", "super+ctrl+alt+d"], "command": "git_diff" },
     { "keys": ["super+ctrl+alt+i"], "command": "increment_selection" },
     { "keys": ["super+ctrl+alt+t"], "command": "delete_trailing_spaces" },
-    { "keys": ["super+ctrl+alt+p", "super+ctrl+alt+j"], "command": "prettyjson" },
+    { "keys": ["super+ctrl+alt+j"], "command": "prettyjson" },
     { "keys": ["ctrl+h"], "command": "open_search_result" },
     { "keys": ["ctrl+shift+super+j"], "command": "move_view", "args": {"direction": "left"} },
     { "keys": ["ctrl+shift+super+l"], "command": "move_view", "args": {"direction": "right"} },
@@ -126,6 +126,8 @@
 
 
     // Other random stuff
+    { "keys": ["super+ctrl+alt+p"], "command": "copy_path" },
+    { "keys": ["super+ctrl+alt+w"], "command": "toggle_setting", "args": { "setting": "word_wrap" } },
     { "keys": ["super+\\"],      "command": "reindent" },
     { "keys": ["super+ctrl+\\"], "command": "reindent" }
 
