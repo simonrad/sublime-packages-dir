@@ -126,6 +126,8 @@
 
 
     // Other random stuff
+    { "keys": ["super+ctrl+o"], "command": "run_macro_file", "args": {"file": "Packages/User/move_up_an_indent_level.sublime-macro"} },
+    { "keys": ["super+ctrl+shift+o"], "command": "expand_selection", "args": {"to": "indentation"} },
     { "keys": ["super+ctrl+alt+p"], "command": "copy_path" },
     { "keys": ["super+ctrl+alt+w"], "command": "toggle_setting", "args": { "setting": "word_wrap" } },
     { "keys": ["super+\\"],      "command": "reindent" },

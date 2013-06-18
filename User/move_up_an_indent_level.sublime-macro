@@ -1,0 +1,17 @@
+[
+	{
+        "command": "expand_selection",
+		"args":
+		{
+			"to": "indentation"
+		}
+	},
+	{
+        "command": "move",
+		"args":
+		{
+			"by": "lines",
+			"forward": false
+		}
+	}
+]
