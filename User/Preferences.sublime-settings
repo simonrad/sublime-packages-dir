@@ -10,14 +10,14 @@
     [
         "Vintage"
     ],
+    "indent_to_bracket": true,
     "open_files_in_new_window": false,
     "show_full_path": true,
     "tab_size": 4,
     "translate_tabs_to_spaces": true,
     "use_tab_stops": true,
-    "word_wrap": false
+    "word_wrap": true
 
     // Consider adding these:
     // "trim_trailing_white_space_on_save": true,
-    // "indent_to_bracket": true,
 }
