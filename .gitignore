@@ -85,6 +85,7 @@
 # Ignore files associated with community packages
 /User/Package Control.last-run
 /User/Package Control.sublime-settings
+/User/Package Control.system-ca-bundle
 /User/sftp_servers/
 
 
