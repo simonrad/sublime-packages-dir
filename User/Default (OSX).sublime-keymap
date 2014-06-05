@@ -36,6 +36,8 @@
     { "keys": ["super+k"],       "command": "move", "args": {"by": "lines", "forward": true} },
     { "keys": ["super+shift+i"], "command": "move", "args": {"by": "lines", "forward": false, "extend": true} },
     { "keys": ["super+shift+k"], "command": "move", "args": {"by": "lines", "forward": true,  "extend": true} },
+    { "keys": ["super+shift+ctrl+i"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": false} },
+    { "keys": ["super+shift+ctrl+k"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": true} },
 
     { "keys": ["alt+i"],       "command": "move_to", "args": { "to": "bol" } },
     { "keys": ["alt+k"],       "command": "move_to", "args": { "to": "eol" } },
