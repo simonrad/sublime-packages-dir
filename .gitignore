@@ -63,6 +63,7 @@
 
 # Un-ignore specific files
 !/Color Scheme - Default/Monokai Bright.tmTheme
+!/Color Scheme - Default/Monokai.tmTheme
 
 
 # Ignore community packages
