@@ -2,7 +2,7 @@
 // are overridden in turn by file type specific settings.
 {
     "auto_match_enabled": false,
-    "color_scheme": "Packages/Color Scheme - Default/Monokai Bright.tmTheme",
+    "color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
     "detect_indentation": true,
     "font_size": 15.0,
     "highlight_line": false,
