@@ -85,9 +85,18 @@
 
 
 # Ignore files associated with community packages
+/User/Package Control.cache/
 /User/Package Control.last-run
+/User/Package Control.merged-ca-bundle
 /User/Package Control.sublime-settings
 /User/Package Control.system-ca-bundle
+/User/Package Control.user-ca-bundle
+/User/oscrypto-ca-bundle.crt
 /User/sftp_servers/
+/markupsafe/
+/mdpopups/
+/pygments/
+/python-jinja2/
+/python-markdown/
 
 
