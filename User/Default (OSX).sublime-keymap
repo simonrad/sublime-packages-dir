@@ -8,8 +8,8 @@
     { "keys": ["super+ctrl+alt+t"], "command": "delete_trailing_spaces" },
     { "keys": ["super+ctrl+alt+j"], "command": "pretty_json" },
     { "keys": ["ctrl+h"], "command": "open_search_result" },
-    { "keys": ["ctrl+shift+super+j"], "command": "move_view", "args": {"direction": "left"} },
-    { "keys": ["ctrl+shift+super+l"], "command": "move_view", "args": {"direction": "right"} },
+    { "keys": ["ctrl+shift+super+j"], "command": "move_tab", "args": {"position": "-1"} },
+    { "keys": ["ctrl+shift+super+l"], "command": "move_tab", "args": {"position": "+1"} },
 
 
     // Begin home-row movement keys
