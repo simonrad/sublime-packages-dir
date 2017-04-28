@@ -11,7 +11,7 @@
     { "keys": ["ctrl+shift+super+j"], "command": "move_tab", "args": {"position": "-1"} },
     { "keys": ["ctrl+shift+super+l"], "command": "move_tab", "args": {"position": "+1"} },
     { "keys": ["super+ctrl+t"], "command": "open_terminal" },
-    { "keys": ["super+shift+t"], "command": "open_recent_file", "args": {"index": 0} },
+    { "keys": ["super+shift+t"], "command": "reopen_last_file" },
 
 
     // Begin home-row movement keys
