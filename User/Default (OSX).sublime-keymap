@@ -61,6 +61,7 @@
 
 
     // Some helpful stuff that goes along with the home-row movement keys
+    { "keys": ["super+shift+d"], "command": "goto_definition" },
     { "keys": ["ctrl+super+q"], "command": "next_view_in_stack" },
     { "keys": ["ctrl+super+w"], "command": "prev_view_in_stack" },
     { "keys": ["ctrl+super+n"], "command": "unindent" },
