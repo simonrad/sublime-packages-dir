@@ -1,6 +1,6 @@
 {
 	"auto_match_enabled": false,
-	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+	"color_scheme": "Monokai.sublime-color-scheme",
 	"detect_indentation": true,
 	"font_size": 15.0,
 	"highlight_line": false,
