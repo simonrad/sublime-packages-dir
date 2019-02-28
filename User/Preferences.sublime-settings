@@ -3,6 +3,7 @@
 	"color_scheme": "Monokai.sublime-color-scheme",
 	"detect_indentation": true,
 	"font_size": 15.0,
+	"git_gutter_show_line_annotation": false,
 	"highlight_line": false,
 	"ignored_packages":
 	[
