@@ -62,8 +62,10 @@
 
     // Some helpful stuff that goes along with the home-row movement keys
     { "keys": ["super+shift+d"], "command": "goto_definition" },
-    { "keys": ["ctrl+super+q"], "command": "next_view_in_stack" },
-    { "keys": ["ctrl+super+w"], "command": "prev_view_in_stack" },
+    { "keys": ["super+shift+r"], "command": "goto_reference" },
+    { "keys": ["ctrl+super+r"], "command": "goto_symbol_in_project" },
+    { "keys": ["ctrl+super+w"], "command": "next_view_in_stack" },
+    { "keys": ["ctrl+super+e"], "command": "prev_view_in_stack" },
     { "keys": ["ctrl+super+n"], "command": "unindent" },
     { "keys": ["ctrl+super+m"], "command": "indent" },
     { "keys": ["ctrl+f"],       "command": "show_panel", "args": {"panel": "incremental_find", "reverse": false} },
@@ -133,6 +135,7 @@
 
     // Other random stuff
     { "keys": ["super+ctrl+o"], "command": "run_macro_file", "args": {"file": "Packages/User/move_up_an_indent_level.sublime-macro"} },
+    { "keys": ["ctrl+k", "ctrl+o"], "command": "run_macro_file", "args": {"file": "Packages/User/collapse_others.sublime-macro"} },
     { "keys": ["super+ctrl+shift+o"], "command": "expand_selection", "args": {"to": "indentation"} },
     { "keys": ["super+ctrl+shift+p"], "command": "expand_selection_to_paragraph" },
     { "keys": ["super+ctrl+alt+p"], "command": "copy_path" },
