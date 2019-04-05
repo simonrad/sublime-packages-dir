@@ -74,7 +74,6 @@
 /Case Conversion/
 /FileDiffs/
 /Git/
-/GitGutter/
 /Increment Selection/
 /MoveTab/
 /Open Search Result/
@@ -83,6 +82,9 @@
 /SFTP/
 /Terminal/
 /TrailingSpaces/
+
+# Note: Don't install GitGutter; it's not useful anymore, and it causes performance problems
+/GitGutter/
 
 
 # Ignore files associated with community packages
