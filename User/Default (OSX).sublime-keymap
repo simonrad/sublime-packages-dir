@@ -141,6 +141,14 @@
     { "keys": ["super+ctrl+alt+p"], "command": "copy_path" },
     { "keys": ["super+ctrl+alt+w"], "command": "toggle_setting", "args": { "setting": "word_wrap" } },
     { "keys": ["super+\\"],      "command": "reindent" },
-    { "keys": ["super+ctrl+\\"], "command": "reindent" }
+    { "keys": ["super+ctrl+\\"], "command": "reindent" },
+
+
+    // Golang helpers
+    // Note: Needs the ShellCommand package installed. Also needs goimports and gofmt installed.
+    { "keys": ["super+ctrl+alt+f"], "command": "shell_command", "args": {
+        "command": "$HOME/go/bin/goimports -w \"${file}\"; /usr/local/bin/gofmt -s -w \"${file}\"",
+        "panel": true
+    }}
 
 ]
