@@ -1,0 +1,39 @@
+[
+  {
+    "command": "move",
+    "args":
+    {
+      "by": "stops",
+      "empty_line": true,
+      "extend": true,
+      "forward": true
+    }
+  },
+  {
+    "command": "reverse_selection_direction",
+    "args": null
+  },
+  {
+    "command": "move",
+    "args":
+    {
+      "by": "stops",
+      "empty_line": true,
+      "extend": true,
+      "forward": false
+    }
+  },
+  {
+    "command": "move",
+    "args":
+    {
+      "by": "characters",
+      "extend": true,
+      "forward": true
+    }
+  },
+  {
+    "command": "reverse_selection_direction",
+    "args": null
+  }
+]

@@ -138,7 +138,7 @@
     { "keys": ["ctrl+k", "ctrl+o"], "command": "run_macro_file", "args": {"file": "Packages/User/collapse_others.sublime-macro"} },
     { "keys": ["ctrl+o"], "command": "run_macro_file", "args": {"file": "Packages/User/expand_this_line_and_collapse_others.sublime-macro"} },
     { "keys": ["super+ctrl+shift+o"], "command": "expand_selection", "args": {"to": "indentation"} },
-    { "keys": ["super+ctrl+shift+p"], "command": "expand_selection_to_paragraph" },
+    { "keys": ["super+ctrl+shift+p"], "command": "run_macro_file", "args": {"file": "Packages/User/expand_to_paragraph.sublime-macro"} },
     { "keys": ["super+ctrl+alt+p"], "command": "copy_path" },
     { "keys": ["super+ctrl+alt+w"], "command": "toggle_setting", "args": { "setting": "word_wrap" } },
     { "keys": ["super+\\"],      "command": "reindent" },
