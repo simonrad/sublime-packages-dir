@@ -33,6 +33,14 @@
     }
   },
   {
+    "command": "move_to",
+    "args":
+    {
+      "extend": true,
+      "to": "hardbol"
+    }
+  },
+  {
     "command": "reverse_selection_direction",
     "args": null
   }
