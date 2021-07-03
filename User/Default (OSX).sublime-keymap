@@ -79,6 +79,8 @@
     { "keys": ["ctrl+b", "ctrl+b"], "command": "toggle_bookmark" },
     { "keys": ["ctrl+b", "ctrl+c"], "command": "clear_bookmarks" },
     { "keys": ["ctrl+b", "ctrl+s"], "command": "select_all_bookmarks" },
+    { "keys": ["ctrl+r"],           "command": "next_bookmark" },
+    { "keys": ["ctrl+t"],           "command": "prev_bookmark" },
 
 
     // Replacements for cmd+j/l
