@@ -139,6 +139,7 @@
     { "keys": ["super+ctrl+o"], "command": "run_macro_file", "args": {"file": "Packages/User/move_up_an_indent_level.sublime-macro"} },
     { "keys": ["ctrl+k", "ctrl+o"], "command": "run_macro_file", "args": {"file": "Packages/User/collapse_others.sublime-macro"} },
     { "keys": ["ctrl+o"], "command": "run_macro_file", "args": {"file": "Packages/User/expand_this_line_and_collapse_others.sublime-macro"} },
+    { "keys": ["super+alt+]"], "command": "run_macro_file", "args": {"file": "Packages/User/better_unfold.sublime-macro"} },
     { "keys": ["super+ctrl+shift+o"], "command": "expand_selection", "args": {"to": "indentation"} },
     { "keys": ["super+ctrl+shift+p"], "command": "run_macro_file", "args": {"file": "Packages/User/expand_to_paragraph.sublime-macro"} },
     { "keys": ["super+ctrl+alt+p"], "command": "copy_path" },
