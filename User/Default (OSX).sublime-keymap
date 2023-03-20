@@ -146,6 +146,7 @@
     { "keys": ["super+ctrl+alt+w"], "command": "toggle_setting", "args": { "setting": "word_wrap" } },
     { "keys": ["super+\\"],      "command": "reindent" },
     { "keys": ["super+ctrl+\\"], "command": "reindent" },
+    { "keys": ["super+ctrl+shift+d"], "command": "diff_changes" }, // "Show unsaved changes"
 
 
     // Golang helpers
