@@ -152,7 +152,7 @@
     // Golang helpers
     // Note: Needs the ShellCommand package installed. Also needs goimports and gofmt installed.
     { "keys": ["super+ctrl+alt+f"], "command": "shell_command", "args": {
-        "command": "$HOME/go/bin/goimports -local \"github.cbhq.net/\" -w \"${file}\"; /opt/homebrew/bin/gofmt -s -w \"${file}\"",
+        "command": "export PATH=\"$PATH:/opt/homebrew/bin\"; $HOME/go/bin/goimports -local \"github.cbhq.net/\" -w \"${file}\"; /opt/homebrew/bin/gofmt -s -w \"${file}\"",
         "panel": true
     }},
 
