@@ -161,5 +161,32 @@
     { "keys": ["super+ctrl+s"], "command": "shell_command", "args": {
         "command": "pbpaste | python3 -c \"import sys; print(float('%.14g' % (sum(float(line) for line in sys.stdin.read().splitlines() if line.strip()))))\"",
         "panel": true
-    }}
+    }},
+
+
+    // Copy Git URL, and modify the URL: Replace github.com with github.cbhq.net, and replace branch with commit.
+    { "keys": ["super+ctrl+alt+g", "super+ctrl+alt+c"],
+        "command": "multicommand",
+        "args": {
+            "commands":
+            [
+                {
+                    "command": "gitlink",
+                    "args":
+                    {
+                        "line": true,
+                        "web": false,
+                        "blame": false
+                    }
+                },
+                {
+                    "command": "shell_command",
+                    "args": {
+                        "command": "export GIT_BRANCH=`git rev-parse --abbrev-ref HEAD`; export GIT_SHA=`git rev-parse --verify HEAD`; pbpaste | python3 -c \"import sys; sys.stdout.write(sys.stdin.read().replace('github.com', 'github.cbhq.net').replace('$GIT_BRANCH', '$GIT_SHA'))\" | pbcopy",
+                        "panel": true
+                    }
+                }
+            ]
+        }
+    }
 ]
